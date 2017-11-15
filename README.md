@@ -10,3 +10,9 @@ npm install
 
 # build for production with minification
 npm run build
+```
+
+## How to Use
+find an iPad, open browser, access http://xxxxxxx/run?p=name1,name2,name3.....
+
+hanle the iPad to every one. One clicks his/her name and see who is his/her target. Then, click the name again to hide it, the name tag will be red, and unclickable again.

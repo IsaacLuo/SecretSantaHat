@@ -4,9 +4,9 @@
       h1 loading....
     div(v-else)
       div.person(v-for="(person,index) in people", :key="index")
-        div.person-button-back(v-if="index==selected" @click="selected = -1") 
-          span {{person}}, you are the secret santa of 
-          span.red {{giftMap[person]}} 
+        div.person-button-back(v-if="index==selected" @click="selected = -1")
+          span {{person}}, you are the secret santa of
+          span.red {{giftMap[person]}}
           span please click this button again to hide this secret.
         el-button.person-button(type="danger" v-else-if="disabledItem[index]") {{person}}
         el-button.person-button(type="primary" @click="clickOnPerson($event, index)" v-else) {{person}}
